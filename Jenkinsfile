@@ -5,5 +5,9 @@ node{
   stage('Check docker-compose version') {
         sh "docker-compose -v"
   }
+
+  stage ('Build') {
+        sh 'docker-compose -f docker-compose.yml build'
+    }
   
 }
