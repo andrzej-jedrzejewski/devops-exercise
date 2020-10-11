@@ -1,0 +1,10 @@
+development:
+  adapter: async
+
+test:
+  adapter: test
+
+production:
+  adapter: redis
+  url: <%= BlogBackend.config.redis.uri %>
+  channel_prefix: production
